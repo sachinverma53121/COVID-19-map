@@ -11,7 +11,11 @@
     <title>COVID-19: TRACKER</title>
   </head>
   <body>
-    <div id="map"></div>
+    <div id="map">
+      <span class="resetbutton"
+        ><button><strong>Reset Map</strong></button></span
+      >
+    </div>
   </body>
 
   <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
@@ -22,6 +26,8 @@
       container: "map",
       style: "mapbox://styles/mapbox/dark-v10",
       zoom: 1.5,
+      minZoom: 1,
+      //maxZoom: 9,
       center: [0, 30],
     });
   </script>

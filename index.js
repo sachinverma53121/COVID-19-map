@@ -1,5 +1,5 @@
 function updateMap() {
-  console.log("update function ran");
+  //console.log("update function ran");
 
   // fetch the data from json file
   fetch("/data.json")
