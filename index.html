@@ -7,10 +7,23 @@
       href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="index.css" />
     <title>COVID-19: TRACKER</title>
   </head>
-  <body></body>
+  <body>
+    <div id="map"></div>
+  </body>
 
   <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
+  <script>
+    mapboxgl.accessToken =
+      "pk.eyJ1IjoiYXNzYWQ0NTM1IiwiYSI6ImNrOWJna2RhNTAwN2Uza3E5eWNoY2N1MmUifQ.gLfEmd1AeopXTgYOKlaLjA";
+    var map = new mapboxgl.Map({
+      container: "map",
+      style: "mapbox://styles/mapbox/dark-v10",
+      zoom: 1,
+    });
+  </script>
+
   <script src="index.js"></script>
 </html>
