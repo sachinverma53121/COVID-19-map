@@ -12,20 +12,3 @@
 .mapboxgl-popup {
   max-width: 10px;
 }
-
-.resetbutton {
-  position: fixed;
-  right: 10px;
-  top: 10px;
-  z-index: 1;
-}
-
-button {
-  background-color: gainsboro;
-  color: black;
-  font-size: 1.5rem;
-  padding: 5px 10px;
-  border-radius: 10px;
-  border: 1px solid gainsboro;
-  box-shadow: 2px 2px 2px #888888;
-}

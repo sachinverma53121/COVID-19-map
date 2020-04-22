@@ -1,5 +1,5 @@
 function updateMap() {
-  //console.log("update function ran");
+  console.log("update function ran");
 
   // fetch the data from json file
   fetch("/data.json")
@@ -54,5 +54,5 @@ function updateMap() {
     .catch();
 }
 updateMap();
-// updatemap in  1200 sec
-setInterval(updateMap, 1200000);
+// updatemap in  100 sec
+setInterval(updateMap, 10000);
