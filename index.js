@@ -24,17 +24,35 @@ function updateMap() {
         else if (cases < 4000) color = "rgb(128,0,0)";
         else color = "rgb(77,11,0)";
 
+        var popUpText =
+          element.name +
+          " - " +
+          element.country +
+          "\n" +
+          "Currently Infected: " +
+          element.sick +
+          "\n" +
+          "Recovered: " +
+          element.recovered +
+          "\n" +
+          "Dead: " +
+          element.dead;
+
+        // create the popup
+        var popup = new mapboxgl.Popup({ offset: 25 }).setText(popUpText);
+
         // Mark on map
         new mapboxgl.Marker({
           draggable: false,
           color: color,
         })
           .setLngLat([longitude, latitude])
+          .setPopup(popup) // sets a popup on this marker
           .addTo(map);
       });
     })
     .catch();
 }
 updateMap();
-// updatemap in  120 sec
-setInterval(updateMap, 120000);
+// updatemap in  1200 sec
+setInterval(updateMap, 1200000);
