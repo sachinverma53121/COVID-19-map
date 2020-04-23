@@ -57,4 +57,4 @@ function updateMap() {
 }
 updateMap();
 // updatemap in  100 sec
-setInterval(updateMap, 10000);
+setInterval(updateMap, 100000);
