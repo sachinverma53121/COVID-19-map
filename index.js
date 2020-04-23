@@ -2,7 +2,7 @@ function updateMap() {
   console.log("update function ran");
 
   // fetch the data from json file
-  fetch("https://github.com/sachinverma53121/COVID-19-map/blob/master/data.json")
+  fetch("https://sachinverma53121.github.io/COVID-19-map/data.json")
     .then((response) => response.json())
     .then((res) => {
       //console.log(res.data);
