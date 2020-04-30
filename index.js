@@ -1,4 +1,5 @@
 var url = "https://sachinverma53121.github.io/COVID-19-map/data.json";
+var url2 = "https://api.covid19api.com/summary";
 
 function updateMap() {
   console.log("update function ran");
